@@ -1,0 +1,17 @@
+@import url(https://fonts.bunny.net/css?family=aldrich:400);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Aldrich", sans-serif;
+  color: aliceblue;
+  background-color: #0f111a;
+}

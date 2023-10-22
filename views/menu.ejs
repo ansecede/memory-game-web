@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./layout/head.ejs") %>
+
+    <body>
+        <div id="opponent-pointer"></div>
+        <section class="title-section">
+            <div class="title-text">
+                <span class="memory">
+                    Memory <%= foo %>
+                </span>
+                <span class="game">
+                    game
+                </span>
+            </div>
+            <div class="title-buttons">
+                <form method="post" action="/play/single-player">
+                    <button type="submit">Single Player</button>
+                </form>
+                <form method="post" action="/play/multiplayer">
+                    <button type="submit">Multiplayer</button>
+                    <form />
+            </div>
+        </section>
+    </body>
+
+</html>

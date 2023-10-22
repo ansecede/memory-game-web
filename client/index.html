@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/board.css">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <div id="opponent-pointer"></div>
+    <section class="title-section">
+        <div class="title-text">
+            <span class="memory">
+                Memory
+            </span>
+            <span class="game">
+                game
+            </span>
+        </div>
+        <div class="title-buttons">
+            <button>Single Player</button>
+            <button>Multiplayer</button>
+        </div>
+    </section>
+    <section class="game-section">
+        <div style="
+        position: absolute;
+        color: white;
+        padding: 8px;
+        font-size: 14px;
+        user-select: none;
+      ">
+            <span>Score: <span id="scoreEl">0</span></span>
+        </div>
+        <!-- <div class="game-options">
+            <p>Aqui va las opciones</p>
+            <p>Boton para reiniciar juego</p>
+            <p>codigo para invitar amigo</p>
+            <p>algo mas que se me ocurra...</p>
+        </div>
+        <div class="game-board">
+            <div class="card-container">
+                <input card-input type="checkbox" class="onclick-faker">
+                <div class="card">
+                    <label for="card-input">
+                        <div class="front">
+                            <p>Parte delantera</p>
+                        </div>
+                    </label>
+                    <div class="back">
+                        <img id="plane" src="assets/airplane-svgrepo-com.svg" alt="Plane">
+                    </div>
+                </div>
+            </div> -->
+        <canvas></canvas>
+        <!-- <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div>
+            <div class="card-container" style="background-color: burlywood;"></div> -->
+        <!-- <div class="game-info">
+            <p>Aqui va la información</p>
+            <p>Timer</p>
+            <p>puntuación</p>
+            <p>algo mas que se me ocurra...</p>
+        </div> -->
+    </section>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
