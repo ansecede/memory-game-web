@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/game.css">
+  <link rel="stylesheet" href="css/button.css">
+  <title>Memory Game</title>
+</head>
+
+<body>
+  <div id="app">
+    <section class="game-section">
+      <div class="game-board-container">
+        <div class="game-board">
+          <div class="card-container hidden">
+            <div class="card">
+              <div class="front">
+                <span class="game-font">
+                  Memory game
+                </span>
+              </div>
+              <div class="back">
+                <img id="plane" src="airplane.svg" alt="Plane">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-menu-container">
+        <div class="game-info">
+          <p class="game-font">Timer: 0 sec</p>
+          <p class="game-font">Points: <span id="score">0</span></p>
+        </div>
+        <div class="game-options">
+          <button class="reset button-pushable" role="button">
+            <span class="button-shadow"></span>
+            <span class="button-edge"></span>
+            <span class="button-front text game-font">
+              Reset game
+            </span>
+          </button>
+          <button class="options button-pushable" role="button">
+            <span class="button-shadow"></span>
+            <span class="button-edge"></span>
+            <span class="button-front text game-font">
+              Options
+            </span>
+            <button class="instructions button-pushable" role="button">
+              <span class="button-shadow"></span>
+              <span class="button-edge"></span>
+              <span class="button-front text game-font">
+                Instructions
+              </span>
+            </button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

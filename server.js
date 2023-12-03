@@ -29,6 +29,11 @@ app.get("/", (_, res) => {
 app.get("/main-menu", (_, res) => {
   res.render("menu", { foo: "bar" });
 });
+
+app.get("/single-player", (_, res) => {
+  res.render("game", { foo: "bar" });
+});
+
 const players = {};
 
 io.on("connection", (socket) => {
